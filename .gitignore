@@ -1,0 +1,22 @@
+# Виртуальное окружение
+venv/
+env/
+
+# Кеш Python
+__pycache__/
+*.pyc
+
+# Логи
+*.log
+
+# Секреты
+.env
+config.local
+
+# IDE
+.vscode/
+.idea/
+
+# ОС
+.DS_Store
+Thumbs.db
