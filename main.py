@@ -13,8 +13,12 @@ def subtract(a, b):
 
 def main():
     print("=== Калькулятор ===")
-    a = float(input("Первое число: "))
-    b = float(input("Второе число: "))
+    try:
+        a = float(input("Первое число: "))
+        b = float(input("Второе число: "))
+    except ValueError:
+        print("Ошибка: нужно вводить числа")
+        return
     print(f"Сумма: {add(a, b)}")
     print(f"Разность: {subtract(a, b)}")
 
