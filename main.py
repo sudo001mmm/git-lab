@@ -11,6 +11,11 @@ def subtract(a, b):
     return a - b
 
 
+def multiply(a, b):
+    """Умножение двух чисел."""
+    return a * b
+
+
 def main():
     print("=== Калькулятор ===")
     try:
@@ -21,6 +26,7 @@ def main():
         return
     print(f"Сумма: {add(a, b)}")
     print(f"Разность: {subtract(a, b)}")
+    print(f"Произведение: {multiply(a, b)}")
 
 
 if __name__ == "__main__":
