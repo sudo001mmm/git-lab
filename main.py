@@ -16,6 +16,11 @@ def multiply(a, b):
     return a * b
 
 
+def modulo(a, b):
+    """Остаток от деления a на b."""
+    return a % b
+
+
 def main():
     print("=== Калькулятор ===")
     try:
@@ -27,6 +32,8 @@ def main():
     print(f"Сумма: {add(a, b)}")
     print(f"Разность: {subtract(a, b)}")
     print(f"Произведение: {multiply(a, b)}")
+    if b != 0:
+        print(f"Остаток: {modulo(a, b)}")
 
 
 if __name__ == "__main__":
